@@ -3,6 +3,7 @@
 https://tinyurl.com/ghebhai
 https://bit.ly/shubhdadas
 https://bit.ly/wadlccl 
+https://bit.ly/rushasakat
 
 
 ifconfig
@@ -19,3 +20,11 @@ ng new my-app
 ng serve --open
 npm i -g json-server
 json-server --watch db.json
+
+
+sudo apt-get update
+sudo apt-get install openssh-server
+sudo ufw allow 22
+he both pc chya terminal madhe execute karaychya and then
+sudo scp filename.txt username@ip:/path
+
