@@ -1,0 +1,14 @@
+th {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #ffff0088;
+    color: red;
+}
+
+td {
+    background-color: #60b8ff88;
+}
+
+button {
+    padding: .5rem;
+}

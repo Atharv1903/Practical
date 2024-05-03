@@ -1,0 +1,29 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .ui-header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .ui-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .ui-content {
+    padding: 15px;
+  }
+  
+  .ui-listview {
+    margin-top: 20px;
+  }
+  
+  .ui-title {
+    font-size: 1.5em;
+  }
+  

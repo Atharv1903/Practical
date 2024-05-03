@@ -1,0 +1,8 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 100px;
+    text-align: center;
+}
