@@ -1,0 +1,47 @@
+login : vagrant and password: vagrant
+
+ifconfig - for ip address (inet)
+
+ls - for checking if there exists any file or not
+
+touch test.txt - creates a file named test.txt
+
+nano test.txt - used to open nano editor to write content in the editor
+
+cat test.txt - displays data in test.txt
+
+scp test.txt vagrant@ip-address:/home/vagrant - used to copy file from one vm to another vm on location /home/vagrant
+
+perform ls command on another vm to check if file is recieved or not.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Oracle Virtual Box
+
+cross-platform virtualization software.
+it allows to run multiple operating system slike windows, MacOs, linux etc.
+
+Virtual machine
+digital verison of physical computer
+allows to run an operating system that completely behaves like a completely separate computer in an app window on desktop.
+
+Virtual Machine Disk
+It is a file format that describes containers for virtual hard drives to be used in virtual machines.
+
+NAT Network
+Network address translation
+it is used to provide different private IP addresses to different users inside organisation's private network.
+
+SCP
+scp (secure copy) command in Linux system is used to copy file(s) between servers in a secure way. The SCP command or secure copy allows the secure transferring of files between the local host and the remote host or between two remote hosts.

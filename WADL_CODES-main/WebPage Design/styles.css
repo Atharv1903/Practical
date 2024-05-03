@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    margin-top: 50px;
+    width: 800px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.heading {
+    border: 1px solid black;
+    text-align: center;
+    font-size: larger;
+    background-color: rgb(239, 239, 100);
+    color: rgb(215, 36, 36);
+}
+
+.classes {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* First column auto-sized, second column takes remaining space */
+    grid-column-gap: 10px;
+    /* Adjust spacing between columns */
+}
+
+
+
+.left {
+    grid-column: 1;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 2px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    /* Place label in the first column */
+}
+
+.right {
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    border: 1px solid black;
+    grid-column: 2;
+    background-color: antiquewhite;
+    /* Place input in the second column */
+}
+
+.full {
+    text-align: center;
+    border: 1px solid black;
+    margin: 4px;
+    background-color: antiquewhite;
+}
+
+.center-input {
+    display: inline-block;
+    padding: 5px;
+
+}
+
+.button {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    border: 1px solid black;
+    margin: 4px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin-left: 60px;
+}

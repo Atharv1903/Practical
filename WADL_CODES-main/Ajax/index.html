@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <form action="" id="form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username">
+                </div>
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter name">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password">
+                </div>
+                <div class="input-group">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" id="cpassword" name="cpassword" placeholder="Enter confirm password">
+                </div>
+                <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" placeholder="Enter date of birth">
+                </div>
+                <div class="input-group">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Andhra_Pradesh">Andhra Pradesh</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="districtSelect">select district</label>
+                    <select name="district" id="districtSelect"></select>
+                </div>
+                <div class="input-group">
+                    <label for="pincode">Pincode</label>
+                    <input type="number" id="pincode" placeholder="Enter pincode">
+                </div>
+                <div class="input-group">
+                    <label>Gender</label>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label>Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label>Female</label>
+                    <input type="radio" id="suyash" name="gender" value="Prefer not to say">
+                    <label>Prefer not to say</label>
+                </div>
+                <div class="input-group">
+                    <label for="hobbies">Hobbies</label>
+                    <label><input type="checkbox" name="hobbies" id="dancing" value="Dancing">Dancing</label>
+                    <label><input type="checkbox" id="reading" name="hobbies" value="Reading">Reading</label>
+                    <label><input type="checkbox" id="singing" name="hobbies" value="Singing">Singing</label>
+                </div>
+                <button type="submit" >Register</button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="district.js"></script>
+<script src="ajax.js"></script>
+
+</html>

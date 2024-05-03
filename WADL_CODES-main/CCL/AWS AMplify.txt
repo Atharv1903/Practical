@@ -1,0 +1,25 @@
+what is aws amplify.
+
+AWS Amplify is a set of tools and services provided by Amazon Web Services (AWS) to help developers build scalable and secure full-stack web and mobile applications. It simplifies the process of developing, deploying, and managing applications by providing a suite of features and services that abstract away much of the infrastructure management and configuration.
+
+Here are some key components and features of AWS Amplify:
+
+Backend Services:
+Amplify offers a range of backend services, including authentication, data storage, APIs, analytics, and machine learning capabilities.
+Developers can easily set up and configure these services through the Amplify CLI (Command Line Interface) or the Amplify Console.
+Authentication:
+Amplify Authentication provides built-in authentication features like sign-up, sign-in, multi-factor authentication, and social sign-in (e.g., using Google, Facebook, or Amazon credentials).
+Developers can integrate authentication into their applications with just a few lines of code, and Amplify handles the underlying infrastructure and security.
+Data Storage:
+Amplify DataStore offers a scalable and flexible data storage solution for web and mobile applications. It supports both online and offline data synchronization, allowing applications to work seamlessly even in offline mode.
+DataStore supports multiple storage options, including Amazon DynamoDB (NoSQL database), Amazon Aurora Serverless (relational database), and Amazon S3 (object storage).
+APIs:
+Amplify provides a simple way to create and manage RESTful and GraphQL APIs for your applications.
+Developers can define API schemas, configure endpoints, and deploy APIs with automatic scaling and built-in security features.
+Hosting:
+Amplify Hosting allows developers to deploy static websites and single-page applications (SPAs) with a few simple commands.
+Hosting provides features like continuous deployment, custom domain support, SSL/TLS certificates, and global CDN (Content Delivery Network) distribution.
+Continuous Deployment:
+The Amplify Console enables continuous deployment of web and mobile applications. It automatically builds and deploys code changes from your Git repository to AWS services like AWS Lambda, Amazon S3, and Amazon CloudFront.
+GraphQL and AppSync:
+Amplify integrates seamlessly with AWS AppSync, a fully managed GraphQL service. Developers can define data models and queries using GraphQL and benefit from real-time data synchronization, offline support, and automatic scalability.

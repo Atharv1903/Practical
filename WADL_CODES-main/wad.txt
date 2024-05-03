@@ -1,0 +1,138 @@
+TypeScript
+
+TypeScript is a programming language developed by Microsoft. It is a superset of JavaScript, meaning that any valid JavaScript code is also valid TypeScript code, but TypeScript adds optional static typing and several other features not present in JavaScript.
+
+Here's how TypeScript differs from JavaScript:
+
+Static Typing: TypeScript allows you to specify types for variables, function parameters, and return values. This provides type safety during development and helps catch errors early in the development process. JavaScript, on the other hand, is dynamically typed, meaning types are determined at runtime rather than at compile time.
+Enhanced Tooling: TypeScript offers better tooling support compared to JavaScript. IDEs and text editors can provide features like autocompletion, type checking, and refactoring tools, which can improve productivity and code quality.
+Modern JavaScript Features: TypeScript supports the latest ECMAScript features along with some proposed features that may not be available in current JavaScript implementations. This allows developers to write code using modern language features while targeting older JavaScript environments through transpilation.
+Interfaces and Advanced OOP: TypeScript supports interfaces, enums, generics, and other advanced features that are not natively available in JavaScript. These features enable developers to write more maintainable and scalable code, especially in large codebases.
+Compilation: TypeScript code needs to be compiled into JavaScript before it can be executed in a browser or a Node.js environment. This adds a build step to the development process but also allows developers to target specific JavaScript versions and optimize their code for performance and compatibility.
+
+
+
+Express
+Express is a minimalist web application framework for Node.js. It provides a robust set of features for building web and mobile applications, as well as APIs. Express simplifies the process of creating web servers and handling HTTP requests and responses by providing a layer of abstraction over the raw Node.js HTTP module.
+
+Key features of Express include:
+
+Routing: Express allows you to define routes for handling different HTTP requests (GET, POST, PUT, DELETE, etc.) to specific URL endpoints. Routes can be used to serve static files, render dynamic content, or handle API requests.
+Middleware: Middleware functions in Express are functions that have access to the request object (req), the response object (res), and the next middleware function in the application's request-response cycle. Middleware can perform tasks such as logging, authentication, error handling, and more.
+Template Engines: Express supports various template engines like Pug, EJS, Handlebars, etc., which allow you to dynamically generate HTML pages by embedding dynamic content within static templates.
+Static File Serving: Express provides a built-in middleware function to serve static files, such as HTML, CSS, JavaScript, images, and other assets, from a directory on the server.
+Error Handling: Express simplifies error handling by providing middleware functions specifically designed to handle errors. These middleware functions can catch errors thrown during request processing and respond with appropriate error messages.
+Integration with Connect Middleware: Express is built on top of the Connect middleware framework, which means it can easily leverage a wide range of third-party middleware modules available in the Node.js ecosystem.
+
+
+Routing and Middleware
+Routing:
+Routing refers to the process of defining how an application responds to client requests to particular endpoints (URLs) with specific HTTP methods (GET, POST, PUT, DELETE, etc.). In simpler terms, it's about mapping URLs to functions that handle those URLs.
+
+Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. Middleware functions can execute any code, make changes to the request and response objects, end the request-response cycle, or call the next middleware function in the stack.
+
+Middleware functions can be used to perform tasks such as:
+
+Processing request data (e.g., parsing JSON, parsing form data)
+Performing authentication and authorization
+Logging requests
+Handling errors
+Middleware functions are added to the Express application using the app.use() method.
+
+
+CORS
+CORS stands for Cross-Origin Resource Sharing. It is a mechanism that allows web servers to specify which origins are permitted to access the resources on the server, thus controlling access to resources from different origins (domains).
+
+In simpler terms, when a web application running in a browser tries to make a request to a server that is hosted on a different domain, the browser, by default, restricts such cross-origin requests for security reasons. CORS is a security feature implemented by web browsers to mitigate the risks associated with cross-origin requests.
+
+CORS is used to enable cross-origin requests in web applications, particularly in scenarios such as:
+
+API Requests: When a frontend application (running in a browser) needs to make AJAX requests to a backend API hosted on a different domain.
+Accessing Resources: When a webpage hosted on one domain needs to load resources (like fonts, images, or scripts) from another domain.
+Single Page Applications (SPAs): Many modern web applications, especially SPAs built with frameworks like React, Angular, or Vue.js, make extensive use of CORS to interact with backend APIs hosted on different domains.
+
+
+Display Property of CSS
+Here are the common values for the display property:
+
+block:
+Elements with display: block; occupy the full width available in their parent container by default and start on a new line.
+Examples of block-level elements include <div>, <p>, <h1> to <h6>, <header>, <footer>, <nav>, <section>, and <article>.
+inline:
+Elements with display: inline; don't start on a new line and only take up as much width as necessary.
+Examples of inline elements include <span>, <a>, <strong>, <em>, <img>, and <input>.
+inline-block:
+Elements with display: inline-block; behave like inline elements but can have block-level properties applied to them (like setting width and height).
+This is useful when you want elements to appear inline but also want to control their dimensions and spacing.
+none:
+Elements with display: none; are completely removed from the document flow and are not rendered on the page.
+This is commonly used to hide elements dynamically via JavaScript or to create toggle effects.
+flex:
+Elements with display: flex; become flex containers, allowing them to control the layout of their children using flexbox properties.
+This is particularly useful for creating responsive layouts and aligning items within a container.
+grid:
+Elements with display: grid; become grid containers, allowing them to control the layout of their children using grid properties.
+Grid layout offers more advanced layout capabilities compared to flexbox, allowing for precise control over rows and columns.
+table, table-row, table-cell, etc.:
+These values mimic the behavior of HTML table elements (<table>, <tr>, <td>, etc.) and are used to create table-like layouts.
+While less commonly used for general layout purposes, they can be useful in specific scenarios where tabular data needs to be displayed.
+
+
+Position property of CSS
+Here are the common values for the position property:
+
+static:
+This is the default value. Elements with position: static; are positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect on statically positioned elements.
+relative:
+Elements with position: relative; are positioned relative to their normal position in the document flow. They can be moved using the top, right, bottom, and left properties.
+When an element is positioned relatively, it still occupies space in the document flow, and other elements are positioned as if it were still in its original position.
+absolute:
+Elements with position: absolute; are removed from the normal document flow and positioned relative to the nearest positioned ancestor (an ancestor with a position value other than static) or the initial containing block if no positioned ancestor is found.
+Absolute positioning allows elements to be placed precisely where desired, using the top, right, bottom, and left properties.
+An absolutely positioned element does not affect the layout of other elements, and other elements may overlap it.
+fixed:
+Elements with position: fixed; are removed from the normal document flow and are positioned relative to the viewport (the browser window).
+Fixed positioning is commonly used for elements like navigation bars or headers that should remain fixed in place as the user scrolls the page.
+Like absolute positioning, fixed positioning does not affect the layout of other elements, and other elements may overlap it.
+sticky:
+Elements with position: sticky; behave like relative positioning until they reach a specified scroll position, at which point they become fixed. Once the user scrolls past the specified point, the element will behave as if it is fixed.
+This is useful for creating elements that stick to the top or bottom of the viewport until a certain point is reached, and then stay fixed in place.
+
+
+Angular 
+Architecture:
+Angular: Angular is a full-fledged MVC (Model-View-Controller) framework. It provides a comprehensive solution with built-in features for routing, forms handling, HTTP client, and state management (with Angular's built-in service, RxJS, or NgRx).
+React: React is a library for building user interfaces. It focuses solely on the view layer and encourages the use of external libraries for other functionalities such as routing (React Router), state management (Redux, MobX), and HTTP requests (Axios, Fetch).
+Language:
+Angular: Angular is written in TypeScript, a superset of JavaScript that adds static typing and other features to JavaScript. TypeScript is maintained by Microsoft.
+React: React is primarily written in JavaScript (ES6+), but it can be used with TypeScript as well.
+Componentization:
+Angular: Angular emphasizes the use of components as the building blocks of applications. Components in Angular are defined using TypeScript classes with metadata annotations.
+React: React introduced the concept of components to the web development world. Components in React are written using JSX (a syntax extension for JavaScript) and JavaScript classes or functions.
+Data Binding:
+Angular: Angular supports both one-way data binding (from component to view) and two-way data binding (synchronization of data between component and view). Two-way data binding is achieved using [(ngModel)] syntax.
+React: React primarily uses one-way data flow. Data flows from parent to child components via props, and changes are communicated from child to parent components via callbacks.
+Rendering:
+Angular: Angular uses a virtual DOM similar to React, but it also supports server-side rendering (SSR) out of the box.
+React: React introduced the concept of the virtual DOM, which improves performance by minimizing DOM manipulation. React supports server-side rendering (SSR) through libraries like Next.js.
+Community and Ecosystem:
+Angular: Angular has a comprehensive ecosystem with built-in solutions for various development needs. It has a tightly integrated toolchain and a large community.
+React: React has a vibrant ecosystem with many third-party libraries and tools. It's known for its flexibility, allowing developers to choose the best tools for their projects.
+
+Command --> ng new testAng --no-standalone --routing --ssr=false
+
+CSS and Boostrap
+CSS (Cascading Style Sheets):
+CSS is a style sheet language used to define the presentation and layout of HTML documents. It allows developers to control the appearance of elements on a web page, including properties like colors, fonts, margins, padding, and positioning.
+CSS is a core technology of the web and is used in every web page to style its content. It provides the foundation for customizing the visual appearance of web pages according to design specifications.
+CSS can be written directly in HTML files, included as external stylesheets, or generated dynamically by pre-processors like Sass or Less. It offers extensive flexibility and control over styling but may require more effort to achieve complex layouts and designs.
+Bootstrap:
+Bootstrap is a front-end framework developed by Twitter. It is built on top of CSS and includes pre-designed HTML, CSS, and JavaScript components and utilities for creating responsive, mobile-first web applications.
+Bootstrap provides a collection of reusable UI components such as buttons, forms, navigation bars, cards, modals, and grids, along with predefined styles and layout classes.
+By using Bootstrap, developers can quickly prototype and build web applications with consistent and visually appealing designs without having to write CSS from scratch. It offers a set of predefined styles and components that can be customized and extended to match specific design requirements.
+Bootstrap also includes responsive design features, such as a responsive grid system and utility classes, making it easy to create layouts that adapt to different screen sizes and devices.
+While Bootstrap uses CSS under the hood, it abstracts away many of the complexities of CSS and provides a higher-level framework for building web applications. It is often used in conjunction with custom CSS to achieve specific design goals and maintain consistency across projects.
+
+
+In CSS, "cascading" refers to the process of determining which styles should apply to a particular element when multiple conflicting styles are defined. The cascade is the mechanism by which styles are applied based on specificity, origin, and order of declaration.
+

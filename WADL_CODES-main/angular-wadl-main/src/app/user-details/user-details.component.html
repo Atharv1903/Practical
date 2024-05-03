@@ -1,0 +1,64 @@
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+<div class="container mt-5">
+    <h2>User Details</h2>
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td><strong>Name:</strong></td>
+            <td>{{ user.name }}</td>
+        </tr>
+        <tr>
+            <td><strong>Username:</strong></td>
+            <td>{{ user.username }}</td>
+        </tr>
+        <tr>
+            <td><strong>Email:</strong></td>
+            <td>{{ user.email }}</td>
+        </tr>
+        <tr>
+            <td><strong>Phone:</strong></td>
+            <td>{{ user.phone }}</td>
+        </tr>
+        <tr>
+            <td><strong>Date of Birth:</strong></td>
+            <td>{{ user.dob }}</td>
+        </tr>
+        <tr>
+            <td><strong>City:</strong></td>
+            <td>{{ user.city }}</td>
+        </tr>
+        <tr>
+            <td><strong>State:</strong></td>
+            <td>{{ user.state }}</td>
+        </tr>
+        <tr>
+            <td><strong>Pincode:</strong></td>
+            <td>{{ user.pincode }}</td>
+        </tr>
+    </table>
+</div>

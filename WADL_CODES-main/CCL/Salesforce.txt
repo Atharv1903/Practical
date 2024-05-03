@@ -1,0 +1,68 @@
+Object manager
+
+home - search - table
+home - search - app manager
+
+Credentials--
+prajwal@pict.sandbox
+Rlkp@4476
+
+Got it! Here's the complete structure based on our final discussion on the Student Management System:
+
+1. *Student Object*:
+   - Fields:
+     - Name (Text)
+     - Roll Number (Text)
+     - Email (Email)
+     - Phone Number (Phone)
+     - Address (Text Area)
+     - Date of Birth (Date)
+     - Gender (Picklist)
+     - GPA (Number)
+   - Relationship: No direct lookup to Enrollment object.
+
+2. *Course Object*:
+   - Fields:
+     - Course Name (Text)
+     - Course Code (Text)
+     - Instructor Name (Text)
+     - Credits (Number)
+     - Semester (Picklist)
+     - Description (Long Text Area)
+   - Relationship: No direct lookup to Enrollment object.
+
+3. *Enrollment Object (Junction Object)*:
+   - Fields:
+     - Enrollment Date (Date)
+     - Status (Picklist, e.g., Enrolled, Dropped)
+   - Relationships:
+     - Lookup to Student object.
+     - Lookup to Course object.
+
+4. *Assignment Object*:
+   - Fields:
+     - Assignment Name (Text)
+     - Description (Long Text Area)
+     - Due Date (Date)
+     - Total Marks (Number)
+     - Submission Date (Date)
+     - Marks Obtained (Number)
+   - Relationship: Lookup to Course object.
+
+5. *Exam Object*:
+   - Fields:
+     - Exam Name (Text)
+     - Date (Date)
+     - Duration (Number)
+     - Total Marks (Number)
+     - Marks Obtained (Number)
+   - Relationship: Lookup to Course object.
+
+With this structure:
+
+- Each enrollment record in the Enrollment object represents a specific student's enrollment in a specific course.
+- Assignments and Exams are directly related to specific courses.
+- Both the Student and Course objects have no direct lookup fields to the Enrollment object. Instead, you access enrollment records through the junction object.
+- This structure allows for flexible management of student enrollments, assignments, and exams within the context of various courses.
+
+he aahe accurate
